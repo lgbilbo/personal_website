@@ -34,11 +34,10 @@ h2, h3, h4, h1, p{
 
 #pink_box{
 	width: 100%;
-	height: 130vh;
 	background-color: #ffcccc;
 	z-index: 2;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 10% 0;
 	position: relative;
 	top: 100vh;
 	border: none;
@@ -69,6 +68,7 @@ h2, h3, h4, h1, p{
 	display: inline;
 	float:left;
 	height:32px;
+  padding-bottom: 2%;
 }
 
 #github{
@@ -76,7 +76,23 @@ h2, h3, h4, h1, p{
 	display: inline;
 }
 
-
+@media (max-device-width: 1000px) {
+  #github { 
+    float: left;
+    clear: both;
+    font-size: 2vh;
+  }
+  #linkedin{
+    font-size: 2vh;
+    margin-bottom: 2%;
+  }
+  #gitimage{
+    margin-right: 10px;
+  }
+  #text_wrapper{
+    width: 90% 
+  }
+}
 
 a{
 	text-decoration: none;
